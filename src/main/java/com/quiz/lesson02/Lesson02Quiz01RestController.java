@@ -9,10 +9,10 @@ import org.springframework.web.bind.annotation.RestController;
 import com.quiz.lesson02.bo.StoreBO;
 import com.quiz.lesson02.domain.Store;
 
-@RestController
+@RestController // @Controller + @ResponseBody
 public class Lesson02Quiz01RestController {
 
-	@Autowired
+	@Autowired  // DI (의존성 주입)
 	private StoreBO storeBO;
 	
 	// http://localhost:8080/lesson02/quiz01
@@ -20,6 +20,6 @@ public class Lesson02Quiz01RestController {
 	public List<Store> quiz01 () {
 		List<Store> storeList = storeBO.getStoreList();
 		
-		return storeList;
+		return storeList; // list json -> response
 	}
 }
