@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.quiz.lesson03.bo.RealEstateBO;
 
 @RestController
-public class Lesson03Quiz04RestController {
+public class Lesson03Quiz04Controller {
 	
 	@Autowired
 	private RealEstateBO realEstateBO;
